@@ -1,0 +1,92 @@
+﻿<HTML>
+<head>
+<title>Aula João EDI V2</title>
+<style>
+.linha{
+display: flex;
+flex-flow: row wrap;
+}
+.coluna-50{
+width: 50%;
+}
+h1{
+font-weight: bolder;
+}
+body{
+background-color: lightblue;
+color: white;
+text-align: center;
+}
+h2{
+text-decoration: underline;
+}
+p{
+color: black;
+}
+button{
+border: none;
+background-color: white;
+color: black;
+border-radius: 10px;
+}
+button:hover{
+color: blue;
+onclick: click;
+}
+</style>
+</head>
+<body>
+<h1>HORÁRIOS:</h1>
+
+<div class="linha">
+<div class="coluna-50">
+<h2>Segunda:</h2>
+<p>Física II: 14:15~15:00</p>
+<button onclick="aulaFisica()">Aula de Física</button>
+<p>Geográfia II: 16:00~16:45</p>
+<button onclick="aulaGeografia()">Aula de Geografia</button>
+
+<h2>Terça:</h2>
+<p>Técnicas Construtivas I: 14:15~15:45</p>
+<button onclick="aulaTecnicas()">Aula de Técnicas Construtivas</button>
+
+</div>
+<div class="coluna-50">
+<h2>Quarta:</h2>
+<p>Língua Portuguesa II: 14:15~15:45</p>
+<button onclick="aulaPortugues()">Aula de Língua Portuguesa</button>
+<p>Física II: 16:00~16:45</p>
+<button onclick="aulaFisica()">Aula de Física</button>
+
+<h2>Quinta:</h2>
+<p>Desenho Arquitetônico I: 14:00~14:45</p>
+<button onclick="aulaDesenho()">Aula de Desenho Arquitetônico</button>
+
+<h2>Sexta:</h2>
+<p>História II: 16:00~16:45</p>
+<button onclick="aulaHistoria()">Aula de História</button>
+
+</div>
+</div>
+<script>
+function aulaFisica() {
+window.open("https://meet.google.com/svy-qbyg-vgz");
+}
+function aulaTecnicas() {
+window.open("https://meet.google.com/wsg-pvqw-ajv");
+}
+function aulaDesenho() {
+window.open("https://meet.google.com/apw-owro-htn");
+}
+function aulaPortugues() {
+window.open("https://meet.google.com/jmo-yifd-rby");
+}
+function aulaHistoria() {
+window.open("https://meet.google.com/pnh-apuf-jcv")
+}
+function aulaGeografia() {
+window.open("https://meet.google.com/oip-sznr-axs")
+}
+</script>
+</body>
+</HTML>
