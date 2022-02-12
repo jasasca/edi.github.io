@@ -1,6 +1,23 @@
 ﻿<HTML>
 <head>
 <title>Aula João EDI V2</title>
+  <!-- Event snippet for Clique de saída - Jacques Tráfego - EDI conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10852366147/nyWvCKKoy6ADEMPu57Yo',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <style>
 .linha{
 display: flex;
@@ -80,7 +97,7 @@ onclick: click;
 </div>
 </div>
 <div>
-  <button onclick="finalizar()">Fechar</button>
+  <button onclick="gtag_report_conversion()">Fechar</button>
 </div>
 <script>
 function aulaFisica() {
