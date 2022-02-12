@@ -97,9 +97,13 @@ onclick: click;
 </div>
 </div>
 <div>
-  <button onclick="gtag_report_conversion()">Fechar</button>
+  <button onclick="fechou()">Fechar</button>
 </div>
 <script>
+ function fechou(){
+  gtag_report_conversion();
+  window.close();
+  }
 function aulaFisica() {
 window.open("https://meet.google.com/svy-qbyg-vgz");
 }
