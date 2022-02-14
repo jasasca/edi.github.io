@@ -48,6 +48,17 @@ text-decoration: underline;
 p{
 color: black;
 }
+  button.fechou{
+  border: none;
+  background-color: white;
+  color: red;
+  }
+  button.fechou:hover{
+  
+  background-color: red;
+  color: white;
+  onclick: click;
+  }
 button{
 border: none;
 background-color: white;
@@ -97,14 +108,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <button onclick:"aulaMatematica()">Aula de Matemática</button>
   </div>
 </div>
-<div> 
-  <label for="mail">E-mail:</label>
-  <input type="email" name="mail" id="mail">
-  <button onclick="fechou()">Fechar</button>
+<div>
+  <button class="fechou" onclick="fechou()">Fechar</button>
 </div>
 <script>
  function fechou(){
-  gtag_report_conversion(url);
+   close();
+   window.open("https://google.com");
   }
 function aulaQuimica() {
 window.open("https://meet.google.com/psn-ktid-koh");
